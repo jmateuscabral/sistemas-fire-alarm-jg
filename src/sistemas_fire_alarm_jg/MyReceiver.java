@@ -9,11 +9,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-public class Receiver extends ReceiverAdapter {
+public class MyReceiver extends ReceiverAdapter {
     protected final Collection<Message> msgs=new ConcurrentLinkedQueue<Message>();
     protected final String name;
 
-    public Receiver(String name) {
+    public MyReceiver(String name) {
         this.name=name;
     }
 

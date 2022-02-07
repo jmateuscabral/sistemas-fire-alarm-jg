@@ -9,7 +9,7 @@ public class FireAlarmConsumer {
         try{
             JChannel channel = new JChannel();
 //            Receiver receiver = new MyReceiver("rec1");
-            Receiver receiver = new MeuReceiver("Exemplo receiver");
+            MyReceiver receiver = new MyReceiver("Exemplo receiver");
             channel.setReceiver(receiver);
             channel.connect("AlarmChannel");
             Message msg = (Message)channel.receive(0);
